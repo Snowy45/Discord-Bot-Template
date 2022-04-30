@@ -8,7 +8,9 @@ class Help(commands.Cog):
         self.bot: nextcord.Client = bot
 
     # Creating the slash command
-    @nextcord.slash_command(name="help", description="Shows you a list of all of the bot's commands", guild_ids=[965963555620941885])
+    # In order to test Slash Commands right away you will need to add your test server ID,
+    # add guild_ids and enter your guild id inside of it(This can only take 1 id at a time)
+    @nextcord.slash_command(name="help", description="Shows you a list of all of the bot's commands")
     async def help(self, interaction: nextcord.Interaction):
 
         # Creating the help embed
